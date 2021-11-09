@@ -21,10 +21,10 @@ def checkBlanagrams(word1, word2):
     print("Result1: ", result1)
     result2 = sum((secondWordCount-firstWordCount).values())
     print("Result2: ", result2)
-    return result1 == 1 or result2 == 1
+    return result1 == 1 or result2 == 1 # "or" works becuase you only need one word to be a blanagram of the other not both. 
 
 
 print(checkBlanagrams("tanagram", "anagram"))
-print(checkBlanagrams("tanagram", "pangram"))
-print(checkBlanagrams("aba", "bab"))
-print(checkBlanagrams("silent", "listen"))
+# print(checkBlanagrams("tanagram", "pangram"))
+# print(checkBlanagrams("aba", "bab"))
+# print(checkBlanagrams("silent", "listen"))
